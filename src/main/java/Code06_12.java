@@ -7,9 +7,12 @@ public class Code06_12 {
         for (;;) {
             System.out.print("num1 => ");
             num1 = s.nextInt();
+            if (num1 == 0) break;
             System.out.print("num2 => ");
             num2 = s.nextInt();
             System.out.printf("%d + %d = %d\n", num1, num2, num1 + num2);
         }
+        System.out.println("tinue");
+        s.close();
     }
 }
