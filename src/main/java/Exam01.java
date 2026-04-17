@@ -1,14 +1,9 @@
 public class Exam01 {
     public static void main(String[] args) {
-        String str = "****";
-        int len = str.length();
-        for (int i = 1; i != 0; i++) {
-            System.out.println(str.substring(0, Math.abs(i)));
-            if (i == len) i -= len * 2;
-        }
+        int[] nums = {1, 3, 7, 1, 4, 7, 3, 1, 9, 0, 7, 3};
+        if (nums.length == 0) System.exit(1);
+        int k = nums[0];
+        for (int i = 1; i < nums.length; i++) if (nums[i] > k) k = nums[i];
+        System.out.println(k + "입니다.");
     }
 }
-
-// int len = 4;
-// String str = "";
-// for (int c = 0; c < 4; c++) str += "*";
