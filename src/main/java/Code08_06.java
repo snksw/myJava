@@ -21,9 +21,9 @@ class Rabbit08_06 {
 }
 
 class HouseRabbit08_06 extends Rabbit08_06 {
+    @Override
     void move(int x, int y) {
-        this.xPos = x;
-        this.yPos = y;
+        super.move(x, y);
         if (this.xPos > 100) this.xPos = 100;
         if (this.yPos > 100) this.yPos = 100;
     }
