@@ -11,6 +11,10 @@ class Rabbit08_02 {
         this.xPos = x;
         this.yPos = y;
     }
+
+    public String toString() {
+        return "(" + this.xPos + ", " + this.yPos + ")에 있는 " + this.shape;
+    }
 }
 
 class HouseRabbit08_02 extends Rabbit08_02 {

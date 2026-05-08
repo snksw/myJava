@@ -7,10 +7,12 @@ public class Code08_03 {
         hRabbit.owner = "난생이";
         hRabbit.move(100, 100);
         hRabbit.eatFeed();
+        System.out.println(hRabbit);
 
         mRabbit.shape = "네모";
         mRabbit.mountain = "설악산";
         mRabbit.move(200, 200);
         mRabbit.eatGrass();
+        System.out.println(mRabbit);
     }
 }
